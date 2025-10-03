@@ -10,6 +10,7 @@ export default function Page() {
     <View>
       <SignedIn>
         <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
+         <Text>Welcome to Phoenixus {user?.firstName}</Text>
         
       </SignedIn>
       <SignedOut>
@@ -19,6 +20,7 @@ export default function Page() {
         <Link href="/(auth)/sign-up">
           <Text>Sign up</Text>
         </Link>
+       
       </SignedOut>
     </View>
   )
