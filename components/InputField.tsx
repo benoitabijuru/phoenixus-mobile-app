@@ -1,12 +1,12 @@
 import {
-    Image,
-    Keyboard,
-    KeyboardAvoidingView,
-    Platform,
-    Text,
-    TextInput,
-    TouchableWithoutFeedback,
-    View,
+  Image,
+  Keyboard,
+  KeyboardAvoidingView,
+  Platform,
+  Text,
+  TextInput,
+  TouchableWithoutFeedback,
+  View,
 } from "react-native";
 
 
@@ -20,6 +20,7 @@ const InputField = ({
   inputStyle,
   iconStyle,
   className,
+  placeholder,
   ...props
 }: InputFieldProps) => {
   return (

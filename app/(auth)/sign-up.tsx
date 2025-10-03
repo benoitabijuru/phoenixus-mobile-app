@@ -6,9 +6,12 @@ import { ReactNativeModal } from "react-native-modal";
 
 import CustomButton from "@/components/CustomButton";
 import InputField from "@/components/InputField";
-// import OAuth from "@/components/OAuth";
+
+import OAuth from "@/components/OAuth";
 import { icons, images } from "@/constants";
-// import { fetchAPI } from "@/lib/fetch";
+import { fetchAPI } from "@/lib/fetch";
+import { useSignUp } from "@clerk/clerk-expo";
+
 
 const SignUp = () => {
   const { isLoaded, signUp, setActive } = useSignUp();
@@ -131,9 +134,9 @@ const SignUp = () => {
         </View>
         <ReactNativeModal
           isVisible={verification.state === "pending"}
-          // onBackdropPress={() =>
-          //   setVerification({ ...verification, state: "default" })
-          // }
+          onBackdropPress={() =>
+            setVerification({ ...verification, state: "default" })
+          }
           onModalHide={() => {
             if (verification.state === "success") {
               setShowSuccessModal(true);
