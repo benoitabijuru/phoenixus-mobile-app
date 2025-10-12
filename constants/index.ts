@@ -24,6 +24,7 @@ export const icons = {
   star: require("@/assets/icons/star.png"),
   target: require("@/assets/icons/target.png"),
   to: require("@/assets/icons/to.png"),
+  setting:require("@/assets/icons/settings.png"),
 };
 
 export const images = {

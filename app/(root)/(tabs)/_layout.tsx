@@ -20,7 +20,7 @@ const TabIcon = ({
         source={source}
         tintColor="white"
         resizeMode="contain"
-        className="w-7 h-7"
+        className="w-5 h-5"
       />
     </View>
   </View>
@@ -36,12 +36,12 @@ export default function Layout() {
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: "#333333",
-          borderRadius: 50,
+          borderRadius: 30,
           paddingBottom: 0, // ios only
           overflow: "hidden",
           marginHorizontal: 20,
           marginBottom: 20,
-          height: 78,
+          height: 48,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -66,7 +66,7 @@ export default function Layout() {
           title: "Session",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon source={icons.list} focused={focused} />
+            <TabIcon source={icons.list} focused={focused}  />
           ),
         }}
       />
@@ -81,16 +81,17 @@ export default function Layout() {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="setting"
+    
         options={{
           title: "Setting",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon source={icons.profile} focused={focused} />
+            <TabIcon  source={icons.setting} focused={focused}  />
           ),
         }}
-      />
+      /> */}
     </Tabs>
   );
 }

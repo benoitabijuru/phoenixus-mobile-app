@@ -20,3 +20,15 @@ declare interface InputFieldProps extends TextInputProps {
   placeholder?: string;
   textContentType?: TextInputProps["textContentType"];
 }
+
+export type Task = {
+  id: string;
+  user_id: string;
+  title: string;
+  description?: string;
+  completed: boolean;
+  priority: 'low' | 'medium' | 'high';
+  due_date?: string;
+  created_at: string;
+  updated_at: string;
+};

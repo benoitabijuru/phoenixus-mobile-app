@@ -21,6 +21,7 @@ const InputField = ({
   iconStyle,
   className,
   placeholder,
+  textContentType,
   ...props
 }: InputFieldProps) => {
   return (
